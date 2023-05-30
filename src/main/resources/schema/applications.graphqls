@@ -1,0 +1,5 @@
+input ApplicationInstallationCommandInput {
+    project: String!
+    version: String!
+    defaultLocale: String
+}
