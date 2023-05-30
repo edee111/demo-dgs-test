@@ -1,5 +1,6 @@
 apply(plugin = "org.springframework.boot")
 apply(plugin = "org.jetbrains.kotlin.plugin.spring")
+apply(plugin = "com.netflix.dgs.codegen")
 
 dependencies {
     implementation(project(":some-module"))
@@ -17,4 +18,3 @@ tasks.withType<org.springframework.boot.gradle.tasks.bundling.BootJar> {
     }
     mainClass.set("com.example.demo.demoapp.DemoApp")
 }
-
