@@ -1,3 +1,7 @@
+plugins {
+    id("java-test-fixtures")
+}
+
 apply(plugin = "org.springframework.boot")
 apply(plugin = "org.jetbrains.kotlin.plugin.spring")
 apply(plugin = "com.netflix.dgs.codegen")
@@ -6,6 +10,7 @@ dependencies {
     implementation(project(":some-module"))
     implementation("org.springframework.boot:spring-boot-starter-web")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    testImplementation(testFixtures(project(":common")))
 }
 
 configure<org.springframework.boot.gradle.dsl.SpringBootExtension> {
