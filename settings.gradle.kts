@@ -1,4 +1,4 @@
 rootProject.name = "demo"
-include(":some-module")
-include("some-module-with-dependency")
+include(":some-module-am")
+include(":some-module-with-dependency-server")
 include("common")

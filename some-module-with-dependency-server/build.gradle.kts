@@ -7,7 +7,7 @@ apply(plugin = "org.jetbrains.kotlin.plugin.spring")
 apply(plugin = "com.netflix.dgs.codegen")
 
 dependencies {
-    implementation(project(":some-module"))
+    implementation(project(":some-module-am"))
     implementation("org.springframework.boot:spring-boot-starter-web")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation(testFixtures(project(":common")))
